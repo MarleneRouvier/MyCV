@@ -203,13 +203,13 @@ button:active {
     padding-bottom: 30px;
 }
 
-.projects-info h4 {
+.projects .projects-wrap .projects-info h4 {
     font-size: 20px;
     color: #E3DAD0;
     font-weight: 500;
 }
 
-.projects-info a {
+.projects .projects-wrap .projects-info a {
     color: #DB7C36;
     margin: 0 4px;
     background-color: #E3DAD0;
@@ -224,26 +224,26 @@ button:active {
     text-decoration: none;
 }
 
-.p.projects-info a i {
+.projects .projects-wrap .projects-info a i {
     font-size: 17px;
 }
 
-.projects-info a:hover {
+.projects .projects-wrap .projects-info a:hover {
     background: #DB7C36;
     color: #E3DAD0;
 }
 
-.projects-wrap:hover .projects-info {
+.projects .projects-wrap:hover .projects-info {
     opacity: 1;
     padding-bottom: 0;
 }
 
-.projects-info a:active {
+.projects .projects-wrap .projects-info a:active {
     background: #DB7C36;
     color: #E3DAD0;
 }
 
-.projects-wrap:active .projects-info {
+.projects .projects-wrap:active .projects-info {
     opacity: 1;
     padding-bottom: 0;
 }
@@ -286,6 +286,21 @@ button:active {
 
 ul li {
     margin-top: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #CC8561;
+}
+
+ul li a:hover {
+    text-transform: uppercase;
+    color: #DB7C36;
+}
+
+ul li a:active {
+    text-transform: uppercase;
+    color: #DB7C36;
 }
 
 .projects-description {
