@@ -143,6 +143,7 @@ button:active {
     color: #8C7B6E;
     font-size: 1.1em;
     text-align: justify;
+    padding: 0 30px;
 }
 
 .about-me h4 {
@@ -155,9 +156,12 @@ button:active {
 #hab-tecnicas h4 {
     text-transform: uppercase;
     margin-bottom: 15px;
-    padding-left: 15px;
     color: #CC8561;
     margin-top: 50px;
+}
+
+.list-group {
+    margin-left: 10px;
 }
 
 
@@ -347,11 +351,11 @@ ul li a:active {
     background-color: #f6f5f5;
 }
 
-.cert-box:hover img {
+.cert-box img:hover {
     transform: scale(1.3);
 }
 
-.cert-box:active img {
+.cert-box img:active {
     transform: scale(1.3);
 }
 
@@ -365,8 +369,26 @@ ul li a:active {
 }
 
 .cert-content {
-    padding: .8rem .4rem;
+    padding: 0;
     margin-bottom: 3px;
+}
+
+.cert-box button {
+    border-radius: 0;
+    font-weight: 450;
+    font-size: 14px;
+    outline: none;
+    margin-bottom: 10px;
+    padding: 7px;
+    background-color: transparent;
+    border: 1px solid #DB7C36;
+    color: #DB7C36;
+}
+
+.cert-box button:hover {
+    color: #E3DAD0;
+    background-color: #DB7C36;
+    border: none;
 }
 
 .c-title {
@@ -380,6 +402,7 @@ ul li a:active {
 
 .c-ctegory {
     color: #DB7C36;
+    margin-bottom: 0px;
 }
 
 
@@ -512,8 +535,8 @@ ul li a:active {
 }
 
 .social-icons a {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
