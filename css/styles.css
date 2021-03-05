@@ -128,7 +128,7 @@ button:active {
     position: relative;
     justify-content: space-evenly;
     text-align: justify;
-    padding: 3rem 1.25rem;
+    padding: 1.5rem 1.25rem;
     margin-bottom: 3rem;
     z-index: 2;
 }
@@ -141,7 +141,7 @@ button:active {
 
 .lead {
     color: #8C7B6E;
-    font-size: 1.1em;
+    font-size: 19px;
     text-align: justify;
     padding: 0 30px;
 }
@@ -162,6 +162,10 @@ button:active {
 
 .list-group {
     margin-left: 10px;
+}
+
+.about-img {
+    margin-top: 25px;
 }
 
 
@@ -376,7 +380,7 @@ ul li a:active {
 .cert-box button {
     border-radius: 0;
     font-weight: 450;
-    font-size: 14px;
+    font-size: 13px;
     outline: none;
     margin-bottom: 10px;
     padding: 7px;
@@ -570,6 +574,11 @@ ul li a:active {
 /********** Large devices only **********/
 
 @media (min-width: 1200px) {
+    /***** ABOUT ME SECTION *****/
+    .box-shadow-full {
+        margin: -10% auto 20px auto;
+    }
+    /***** END ABOUT ME SECTION *****/
     /***** CONTACT SECTION *****/
     .contact-img {
         background-image: url(../images/background/contact1500.jpg);
@@ -624,6 +633,12 @@ ul li a:active {
     /***** ABOUT ME SECTION *****/
     .box-shadow-full {
         margin: -10% auto 20px auto;
+    }
+    .about-img {
+        margin-top: 48px;
+    }
+    .lead {
+        font-size: 17px;
     }
     /***** END ABOUT ME SECTION *****/
     /***** CONTACT SECTION *****/
@@ -685,6 +700,12 @@ ul li a:active {
     /***** ABOUT ME SECTION *****/
     .box-shadow-full {
         margin: -15% auto 20px auto;
+    }
+    .about-img {
+        margin-top: 43px;
+    }
+    .lead {
+        font-size: 17px;
     }
     /***** END ABOUT ME SECTION *****/
     /***** CONTACT SECTION *****/
