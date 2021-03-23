@@ -1,810 +1,860 @@
-    /* CSS Document */
-    
-    body {
-        font-family: 'Rubik', sans-serif;
-        background-color: #f6f5f5;
-        margin: 0px;
-        padding: 0px;
-    }
-    /*--------------------------------------------------------------
+/* CSS Document */
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #f6f5f5;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*--------------------------------------------------------------
 # Navbar Section
 --------------------------------------------------------------*/
-    
-    .navbar {
-        text-transform: uppercase;
-        font-size: 16px;
-        font-weight: 500;
-        background-color: #E3DAD0;
-        opacity: 90%;
-    }
-    
-    #logoimg {
-        width: 15%
-    }
-    
-    .nav-item {
-        text-align: center;
-    }
-    /***** END NAVBAR *****/
-    /*--------------------------------------------------------------
+
+.navbar {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #E3DAD0;
+    opacity: 90%;
+}
+
+#logoimg {
+    width: 15%
+}
+
+.nav-item {
+    text-align: center;
+}
+
+
+/***** END NAVBAR *****/
+
+
+/*--------------------------------------------------------------
 # Header Section
 --------------------------------------------------------------*/
-    
+
+header {
+    width: 100%;
+    height: 89vh;
+    background-color: #CC8561;
+    overflow: hidden;
+}
+
+.text-container {
+    margin-top: 58px;
+    padding: 50px 25px;
+    width: 55%;
+    height: 89vh;
+}
+
+.img-container {
+    width: 45%;
+    height: 89vh;
+    margin-top: 58px;
+}
+
+#myimg {
+    width: 320px;
+    margin: 45px 20px 50px 5%;
+}
+
+.text-container p:nth-child(1) {
+    font-weight: bold;
+    color: #202020;
+    font-size: 2.2em;
+    padding-top: 80px;
+}
+
+.text-container p:nth-child(2) {
+    font-weight: bold;
+    color: #202020;
+    font-size: 3em;
+}
+
+.text-container p:nth-child(3) {
+    color: #202020;
+    font-size: 2.5em;
+}
+
+.text-container p {
+    margin: 5px 0px 25px;
+    line-height: 35px;
+}
+
+.text-container button {
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    outline: none;
+    margin: 10px 10px;
+}
+
+.down-cv {
+    background-color: #e6e3e3;
+    color: #DB7C36;
+    border: none;
+}
+
+.text-container button:hover {
+    color: #E3DAD0;
+    background-color: #DB7C36;
+}
+
+button:active {
+    transform: scale(1.1);
+}
+
+
+/***** END HEADER SECTION *****/
+
+
+/*--------------------------------------------------------------
+# About Me Section
+--------------------------------------------------------------*/
+
+.box-pl2 {
+    padding-left: 2rem;
+}
+
+.box-shadow-full {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px #00000033;
+    display: flex;
+    margin: -4% auto 20px auto;
+    position: relative;
+    justify-content: space-evenly;
+    text-align: justify;
+    padding: 1.5rem 1.25rem;
+    margin-bottom: 3rem;
+    z-index: 2;
+}
+
+.about-me .box-shadow-full {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 13px;
+}
+
+.lead {
+    color: #8C7B6E;
+    font-size: 19px;
+    text-align: justify;
+    padding: 0 30px;
+}
+
+.about-me h4 {
+    text-transform: uppercase;
+    color: #CC8561;
+    margin-bottom: 15px;
+}
+
+#fortalezas h4,
+#hab-tecnicas h4 {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #CC8561;
+    margin-top: 50px;
+}
+
+.list-group {
+    margin-left: 10px;
+}
+
+.about-img {
+    margin-top: 25px;
+}
+
+
+/***** END ABOUT ME SECTION *****/
+
+
+/*--------------------------------------------------------------
+# Projects Section
+--------------------------------------------------------------*/
+
+.section-title h4 {
+    text-transform: uppercase;
+    color: #CC8561;
+    margin: 5px 0px 30px;
+    text-align: center;
+}
+
+.projects .projects-wrap {
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.projects-item {
+    margin-bottom: 30px;
+}
+
+.projects .projects-wrap .projects-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: 0.3s;
+    text-align: center;
+    background: rgba(31, 53, 72, 0.6);
+    padding-bottom: 30px;
+}
+
+.projects .projects-wrap .projects-info h4 {
+    font-size: 20px;
+    color: #E3DAD0;
+    font-weight: 500;
+}
+
+.projects .projects-wrap .projects-info a {
+    color: #DB7C36;
+    margin: 0 4px;
+    background-color: #E3DAD0;
+    border-radius: 50%;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.projects .projects-wrap .projects-info a i {
+    font-size: 17px;
+}
+
+.projects .projects-wrap .projects-info a:hover {
+    background: #DB7C36;
+    color: #E3DAD0;
+}
+
+.projects .projects-wrap:hover .projects-info {
+    opacity: 1;
+    padding-bottom: 0;
+}
+
+.projects .projects-wrap .projects-info a:active {
+    background: #DB7C36;
+    color: #E3DAD0;
+}
+
+.projects .projects-wrap:active .projects-info {
+    opacity: 1;
+    padding-bottom: 0;
+}
+
+
+/***** END PROJECTS SECTION *****/
+
+
+/*--------------------------------------------------------------
+  # Projects Details Page
+  --------------------------------------------------------------*/
+
+.projects-details {
+    margin-top: 85px;
+    margin-bottom: 15px;
+}
+
+.carousel {
+    margin-bottom: 20px;
+}
+
+.projects-info {
+    padding: 20px;
+    box-shadow: 0px 0 30px #1f354814;
+}
+
+.projects-info h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.projects-info ul {
+    list-style: none;
+    padding: 0;
+    font-size: 15px;
+}
+
+ul li {
+    margin-top: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #CC8561;
+}
+
+ul li a:hover {
+    text-transform: uppercase;
+    color: #DB7C36;
+}
+
+ul li a:active {
+    text-transform: uppercase;
+    color: #DB7C36;
+}
+
+.projects-description {
+    padding: 20px;
+    box-shadow: 0px 0 30px #1f354814;
+    margin-top: 20px;
+}
+
+.projects-description h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.projects-description p {
+    padding: 0;
+    text-align: justify;
+}
+
+
+/***** END PROJECTS DETAILS PAGE *****/
+
+
+/*--------------------------------------------------------------
+# Certificates Section
+--------------------------------------------------------------*/
+
+.title-a {
+    text-transform: uppercase;
+    color: #CC8561;
+    margin: 25px 0px;
+}
+
+.certificates-box {
+    background-color: #E3DAD0;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.cert-box {
+    margin-bottom: 1rem;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: #f6f5f5;
+}
+
+.cert-box img:hover {
+    transform: scale(1.3);
+}
+
+.cert-box img:active {
+    transform: scale(1.3);
+}
+
+.cert-img {
+    display: block;
+    overflow: hidden;
+}
+
+.cert-img img {
+    transition: all 1s;
+}
+
+.cert-content {
+    padding: 0;
+    margin-bottom: 3px;
+}
+
+.cert-box button {
+    border-radius: 0;
+    font-weight: 450;
+    font-size: 13px;
+    outline: none;
+    margin-bottom: 10px;
+    padding: 7px;
+    background-color: transparent;
+    border: 1px solid #DB7C36;
+    color: #DB7C36;
+}
+
+.cert-box button:hover {
+    color: #E3DAD0;
+    background-color: #DB7C36;
+    border: none;
+}
+
+.c-title {
+    font-size: 1.1rem;
+}
+
+.c-more {
+    font-size: .9rem;
+    text-align: center;
+}
+
+.c-ctegory {
+    color: #DB7C36;
+    margin-bottom: 0px;
+}
+
+
+/***** END CERTIFICATES SECTION *****/
+
+
+/*--------------------------------------------------------------
+# Contact Page
+--------------------------------------------------------------*/
+
+.contact-img {
+    width: 100%;
+    height: 45vh;
+    position: relative;
+    object-fit: cover;
+    margin-top: -5px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    opacity: 65%;
+    padding: 0px;
+}
+
+.contact-text h4 {
+    text-transform: uppercase;
+    color: #CC8561;
+    margin: 20px;
+    margin-top: 45px;
+    text-align: center;
+}
+
+.footer-paralax {
+    padding: 4rem 0 0 0;
+}
+
+.contact-box {
+    margin-top: 4rem;
+}
+
+.contact-div {
+    margin: 2em;
+    padding: 1em;
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-text {
+    font-size: 1.1em;
+    font-weight: 350;
+    margin-top: 15px;
+    color: #8C7B6E;
+}
+
+.contact-icon {
+    color: #DB7C36;
+}
+
+.contact-text:hover,
+.contact-icon:hover {
+    opacity: 80%;
+}
+
+.contact-text:active,
+.contact-icon:active {
+    opacity: 80%;
+}
+
+
+/***** END CONTACT SECTION *****/
+
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+
+.top-link {
+    transition: all .25s ease-in-out;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    display: inline-flex;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    background-color: #DB7C36;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#js-top i {
+    color: #E3DAD0;
+}
+
+#js-top:hover {
+    opacity: .8;
+}
+
+#js-top:active {
+    opacity: .8;
+}
+
+.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.hide {
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+/***** END BACK TO TOP BUTTON *****/
+
+
+/*--------------------------------------------------------------
+# Footer Section
+--------------------------------------------------------------*/
+
+.footer {
+    background-color: #CC8561;
+    color: #202020;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6e3e3;
+    color: #DB7C36;
+    margin: 10px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #E3DAD0;
+    background-color: #DB7C36;
+}
+
+.social-icons a:active {
+    color: #E3DAD0;
+    background-color: #DB7C36;
+    transform: scale(1.4);
+}
+
+
+/***** END FOOTER *****/
+
+
+/*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
+
+
+/********** Large devices only **********/
+
+@media (min-width: 1200px) {
+    /***** ABOUT ME SECTION *****/
+    .box-shadow-full {
+        margin: -10% auto 20px auto;
+    }
+    /***** END ABOUT ME SECTION *****/
+    /***** CONTACT SECTION *****/
+    .contact-img {
+        background-image: url(../images/background/contact1500.jpg);
+    }
+    /***** END CONTACT SECTION *****/
+}
+
+
+/********** Medium devices only **********/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /***** HEADER SECTION *****/
     header {
         width: 100%;
         height: 89vh;
         background-color: #CC8561;
         overflow: hidden;
+        position: relative;
     }
-    
     .text-container {
-        margin-top: 58px;
-        padding: 50px 25px;
+        margin-top: 40px;
+        padding: 35px 25px;
         width: 55%;
         height: 89vh;
     }
-    
     .img-container {
         width: 45%;
         height: 89vh;
-        margin-top: 58px;
+        margin-top: 30px;
     }
-    
     #myimg {
         width: 320px;
-        margin: 45px 20px 50px 5%;
     }
-    
+    .text-container p {
+        margin: 5px 0px 25px 30px;
+        line-height: 30px;
+    }
     .text-container p:nth-child(1) {
-        font-weight: bold;
-        color: #202020;
-        font-size: 2.2em;
-        padding-top: 80px;
+        font-size: 2em;
+        padding-top: 60px;
     }
-    
     .text-container p:nth-child(2) {
-        font-weight: bold;
-        color: #202020;
-        font-size: 3em;
-    }
-    
-    .text-container p:nth-child(3) {
-        color: #202020;
         font-size: 2.5em;
     }
-    
-    .text-container p {
-        margin: 5px 0px 25px;
-        line-height: 35px;
+    .text-container p:nth-child(3) {
+        font-size: 2em;
+        margin-bottom: 15px;
     }
-    
-    .text-container button {
-        border-radius: 10px;
-        font-weight: bold;
-        font-size: 14px;
-        outline: none;
-        margin: 10px 10px;
+    .text-container .social-icons {
+        margin-left: 20px;
     }
-    
-    .down-cv {
-        background-color: #e6e3e3;
-        color: #DB7C36;
-        border: none;
-    }
-    
-    .text-container button:hover {
-        color: #E3DAD0;
-        background-color: #DB7C36;
-    }
-    
-    button:active {
-        transform: scale(1.1);
-    }
-    /***** END HEADER SECTION *****/
-    /*--------------------------------------------------------------
-# About Me Section
---------------------------------------------------------------*/
-    
-    .box-pl2 {
-        padding-left: 2rem;
-    }
-    
+    /***** ABOUT ME SECTION *****/
     .box-shadow-full {
-        background: #ffffff;
-        border-radius: 20px;
-        box-shadow: 2px 2px 12px #00000033;
-        display: flex;
-        margin: -4% auto 20px auto;
-        position: relative;
-        justify-content: space-evenly;
-        text-align: justify;
-        padding: 1.5rem 1.25rem;
-        margin-bottom: 3rem;
-        z-index: 2;
+        margin: -10% auto 20px auto;
     }
-    
-    .about-me .box-shadow-full {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        border-radius: 13px;
-    }
-    
-    .lead {
-        color: #8C7B6E;
-        font-size: 19px;
-        text-align: justify;
-        padding: 0 30px;
-    }
-    
-    .about-me h4 {
-        text-transform: uppercase;
-        color: #CC8561;
-        margin-bottom: 15px;
-    }
-    
-    #fortalezas h4,
-    #hab-tecnicas h4 {
-        text-transform: uppercase;
-        margin-bottom: 15px;
-        color: #CC8561;
-        margin-top: 50px;
-    }
-    
-    .list-group {
-        margin-left: 10px;
-    }
-    
     .about-img {
-        margin-top: 25px;
+        margin-top: 48px;
     }
-    /***** END ABOUT ME SECTION *****/
-    /*--------------------------------------------------------------
-# Projects Section
---------------------------------------------------------------*/
-    
-    .section-title h4 {
-        text-transform: uppercase;
-        color: #CC8561;
-        margin: 5px 0px 30px;
-        text-align: center;
-    }
-    
-    .projects .projects-wrap {
-        box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
-        transition: 0.3s;
-        position: relative;
-        overflow: hidden;
-    }
-    
-    .projects-item {
-        margin-bottom: 30px;
-    }
-    
-    .projects .projects-wrap .projects-info {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        opacity: 0;
-        position: absolute;
-        bottom: 0;
-        top: 0;
-        left: 0;
-        right: 0;
-        transition: 0.3s;
-        text-align: center;
-        background: rgba(31, 53, 72, 0.6);
-        padding-bottom: 30px;
-    }
-    
-    .projects .projects-wrap .projects-info h4 {
-        font-size: 20px;
-        color: #E3DAD0;
-        font-weight: 500;
-    }
-    
-    .projects .projects-wrap .projects-info a {
-        color: #DB7C36;
-        margin: 0 4px;
-        background-color: #E3DAD0;
-        border-radius: 50%;
-        text-align: center;
-        width: 45px;
-        height: 45px;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        transition: 0.3s;
-        text-decoration: none;
-    }
-    
-    .projects .projects-wrap .projects-info a i {
+    .lead {
         font-size: 17px;
     }
-    
-    .projects .projects-wrap .projects-info a:hover {
-        background: #DB7C36;
-        color: #E3DAD0;
-    }
-    
-    .projects .projects-wrap:hover .projects-info {
-        opacity: 1;
-        padding-bottom: 0;
-    }
-    
-    .projects .projects-wrap .projects-info a:active {
-        background: #DB7C36;
-        color: #E3DAD0;
-    }
-    
-    .projects .projects-wrap:active .projects-info {
-        opacity: 1;
-        padding-bottom: 0;
-    }
-    /***** END PROJECTS SECTION *****/
-    /*--------------------------------------------------------------
-  # Projects Details Page
-  --------------------------------------------------------------*/
-    
-    .projects-details {
-        margin-top: 85px;
-        margin-bottom: 15px;
-    }
-    
-    .carousel {
-        margin-bottom: 20px;
-    }
-    
-    .projects-info {
-        padding: 20px;
-        box-shadow: 0px 0 30px #1f354814;
-    }
-    
-    .projects-info h3 {
-        font-size: 22px;
-        font-weight: 700;
-        margin-bottom: 20px;
-        padding-bottom: 20px;
-        border-bottom: 1px solid #eeeeee;
-    }
-    
-    .projects-info ul {
-        list-style: none;
-        padding: 0;
-        font-size: 15px;
-    }
-    
-    ul li {
-        margin-top: 10px;
-    }
-    
-    ul li a {
-        text-decoration: none;
-        color: #CC8561;
-    }
-    
-    ul li a:hover {
-        text-transform: uppercase;
-        color: #DB7C36;
-    }
-    
-    ul li a:active {
-        text-transform: uppercase;
-        color: #DB7C36;
-    }
-    
-    .projects-description {
-        padding: 20px;
-        box-shadow: 0px 0 30px #1f354814;
-        margin-top: 20px;
-    }
-    
-    .projects-description h2 {
-        font-size: 26px;
-        font-weight: 700;
-        margin-bottom: 20px;
-    }
-    
-    .projects-description p {
-        padding: 0;
-        text-align: justify;
-    }
-    /***** END PROJECTS DETAILS PAGE *****/
-    /*--------------------------------------------------------------
-# Certificates Section
---------------------------------------------------------------*/
-    
-    #certificates h4 {
-        text-transform: uppercase;
-        color: #CC8561;
-        margin: 25px 0px;
-    }
-    
-    .certificates-box {
-        background-color: #E3DAD0;
-        padding: 15px;
-        margin-bottom: 20px;
-    }
-    
-    .cert-box {
-        margin-bottom: 1rem;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        background-color: #f6f5f5;
-    }
-    
-    .cert-box img:hover {
-        transform: scale(1.3);
-    }
-    
-    .cert-box img:active {
-        transform: scale(1.3);
-    }
-    
-    .cert-img {
-        display: block;
-        overflow: hidden;
-    }
-    
-    .cert-img img {
-        transition: all 1s;
-    }
-    
-    .cert-content {
-        padding: 0;
-        margin-bottom: 3px;
-    }
-    
-    .cert-box button {
-        border-radius: 0;
-        font-weight: 450;
-        font-size: 13px;
-        outline: none;
-        margin-bottom: 10px;
-        padding: 7px;
-        background-color: transparent;
-        border: 1px solid #DB7C36;
-        color: #DB7C36;
-    }
-    
-    .cert-box button:hover {
-        color: #E3DAD0;
-        background-color: #DB7C36;
-        border: none;
-    }
-    
-    .c-title {
-        font-size: 1.1rem;
-    }
-    
-    .c-more {
-        font-size: .9rem;
-        text-align: center;
-    }
-    
-    .c-ctegory {
-        color: #DB7C36;
-        margin-bottom: 0px;
-    }
-    /***** END CERTIFICATES SECTION *****/
-    /*--------------------------------------------------------------
-# Contact Page
---------------------------------------------------------------*/
-    
+    /***** END ABOUT ME SECTION *****/
+    /***** CONTACT SECTION *****/
     .contact-img {
-        width: 100%;
-        height: 45vh;
-        position: relative;
-        object-fit: cover;
-        margin-top: -5px;
-        background-repeat: no-repeat;
-        overflow: hidden;
-        opacity: 65%;
-        padding: 0px;
+        background-image: url(../images/background/contact1200.jpg);
+        height: 25vh;
     }
-    
     .contact-text h4 {
-        text-transform: uppercase;
-        color: #CC8561;
-        margin: 20px;
-        margin-top: 45px;
-        text-align: center;
-    }
-    
-    .footer-paralax {
-        padding: 4rem 0 0 0;
-    }
-    
-    .contact-box {
-        margin-top: 4rem;
-    }
-    
-    .contact-div {
-        margin: 2em;
-        padding: 1em;
-        text-decoration: none;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .contact-text {
-        font-size: 1.1em;
-        font-weight: 350;
-        margin-top: 15px;
-        color: #8C7B6E;
-    }
-    
-    .contact-icon {
-        color: #DB7C36;
-    }
-    
-    .contact-text:hover,
-    .contact-icon:hover {
-        opacity: 80%;
-    }
-    
-    .contact-text:active,
-    .contact-icon:active {
-        opacity: 80%;
+        margin-bottom: 5px;
     }
     /***** END CONTACT SECTION *****/
-    /*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
-    
-    .top-link {
-        transition: all .25s ease-in-out;
-        position: fixed;
-        bottom: 20px;
-        right: 10px;
-        display: inline-flex;
-        cursor: pointer;
-        border-radius: 50%;
-        width: 45px;
-        height: 45px;
-        background-color: #DB7C36;
-        text-decoration: none;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    #js-top i {
-        color: #E3DAD0;
-    }
-    
-    #js-top:hover {
-        opacity: .8;
-    }
-    
-    #js-top:active {
-        opacity: .8;
-    }
-    
-    .show {
-        visibility: visible;
-        opacity: 1;
-    }
-    
-    .hide {
-        visibility: hidden;
-        opacity: 0;
-    }
-    /***** END BACK TO TOP BUTTON *****/
-    /*--------------------------------------------------------------
-# Footer Section
---------------------------------------------------------------*/
-    
-    .footer {
+}
+
+
+/********** Small devices only **********/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /***** HEADER SECTION *****/
+    header {
+        width: 100%;
+        height: 89vh;
         background-color: #CC8561;
-        color: #202020;
+        overflow: hidden;
+        position: relative;
     }
-    
-    .social-icons {
-        display: flex;
-        justify-content: center;
+    .text-container {
+        margin-top: 40px;
+        padding: 25px 25px;
+        width: 55%;
+        height: 89vh;
     }
-    
-    .social-icons a {
-        width: 40px;
-        height: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #e6e3e3;
-        color: #DB7C36;
-        margin: 10px;
-        border-radius: 50%;
-        text-decoration: none;
+    .img-container {
+        width: 45%;
+        height: 89vh;
+        margin-top: 25px;
     }
-    
-    .social-icons a:hover {
-        color: #E3DAD0;
-        background-color: #DB7C36;
+    #myimg {
+        width: 300px;
     }
-    
-    .social-icons a:active {
-        color: #E3DAD0;
-        background-color: #DB7C36;
-        transform: scale(1.4);
+    .text-container p {
+        margin: 5px 0px 25px;
+        line-height: 20px;
     }
-    /***** END FOOTER *****/
-    /*--------------------------------------------------------------
-# Media Queries
---------------------------------------------------------------*/
-    /********** Large devices only **********/
-    
-    @media (min-width: 1200px) {
-        /***** ABOUT ME SECTION *****/
-        .box-shadow-full {
-            margin: -10% auto 20px auto;
-        }
-        /***** END ABOUT ME SECTION *****/
-        /***** CONTACT SECTION *****/
-        .contact-img {
-            background-image: url(../images/background/contact1500.jpg);
-        }
-        /***** END CONTACT SECTION *****/
+    .text-container p:nth-child(1) {
+        font-size: 1.7em;
+        padding-top: 60px;
     }
-    /********** Medium devices only **********/
-    
-    @media (min-width: 992px) and (max-width: 1199px) {
-        /***** HEADER SECTION *****/
-        header {
-            width: 100%;
-            height: 89vh;
-            background-color: #CC8561;
-            overflow: hidden;
-            position: relative;
-        }
-        .text-container {
-            margin-top: 40px;
-            padding: 35px 25px;
-            width: 55%;
-            height: 89vh;
-        }
-        .img-container {
-            width: 45%;
-            height: 89vh;
-            margin-top: 30px;
-        }
-        #myimg {
-            width: 320px;
-        }
-        .text-container p {
-            margin: 5px 0px 25px 30px;
-            line-height: 30px;
-        }
-        .text-container p:nth-child(1) {
-            font-size: 2em;
-            padding-top: 60px;
-        }
-        .text-container p:nth-child(2) {
-            font-size: 2.5em;
-        }
-        .text-container p:nth-child(3) {
-            font-size: 2em;
-            margin-bottom: 15px;
-        }
-        .text-container .social-icons {
-            margin-left: 20px;
-        }
-        /***** ABOUT ME SECTION *****/
-        .box-shadow-full {
-            margin: -10% auto 20px auto;
-        }
-        .about-img {
-            margin-top: 48px;
-        }
-        .lead {
-            font-size: 17px;
-        }
-        /***** END ABOUT ME SECTION *****/
-        /***** CONTACT SECTION *****/
-        .contact-img {
-            background-image: url(../images/background/contact1200.jpg);
-            height: 25vh;
-        }
-        .contact-text h4 {
-            margin-bottom: 5px;
-        }
-        /***** END CONTACT SECTION *****/
+    .text-container p:nth-child(2) {
+        font-size: 2em;
     }
-    /********** Small devices only **********/
-    
-    @media (min-width: 768px) and (max-width: 991px) {
-        /***** HEADER SECTION *****/
-        header {
-            width: 100%;
-            height: 89vh;
-            background-color: #CC8561;
-            overflow: hidden;
-            position: relative;
-        }
-        .text-container {
-            margin-top: 40px;
-            padding: 25px 25px;
-            width: 55%;
-            height: 89vh;
-        }
-        .img-container {
-            width: 45%;
-            height: 89vh;
-            margin-top: 25px;
-        }
-        #myimg {
-            width: 300px;
-        }
-        .text-container p {
-            margin: 5px 0px 25px;
-            line-height: 20px;
-        }
-        .text-container p:nth-child(1) {
-            font-size: 1.7em;
-            padding-top: 60px;
-        }
-        .text-container p:nth-child(2) {
-            font-size: 2em;
-        }
-        .text-container p:nth-child(3) {
-            font-size: 1.6em;
-            margin-bottom: 15px;
-        }
-        .text-container .contact-btn {
-            margin-left: 0px;
-        }
-        /***** END HEADER SECTION *****/
-        /***** ABOUT ME SECTION *****/
-        .box-shadow-full {
-            margin: -15% auto 20px auto;
-        }
-        .about-img {
-            margin-top: 43px;
-        }
-        .lead {
-            font-size: 17px;
-        }
-        /***** END ABOUT ME SECTION *****/
-        /***** CONTACT SECTION *****/
-        .contact-img {
-            background-image: url(../images/background/contact991.jpg);
-            height: 25vh;
-        }
-        .contact-text h4 {
-            margin-top: 20px;
-        }
-        /***** END CONTACT SECTION *****/
+    .text-container p:nth-child(3) {
+        font-size: 1.6em;
+        margin-bottom: 15px;
     }
-    /********** Extra small devices only **********/
-    
-    @media (min-width: 479px) and (max-width: 767px) {
-        /***** NAVBAR SECTION *****/
-        .navbar-brand {
-            font-size: 16px;
-        }
-        /***** END NAVBAR SECTION *****/
-        /***** HEADER SECTION *****/
-        header {
-            width: 100%;
-            height: 89vh;
-            background-color: #CC8561;
-            overflow: hidden;
-            position: relative;
-        }
-        .text-container {
-            margin-top: 30px;
-            padding: 25px 25px;
-            width: 100%;
-        }
-        .img-container {
-            visibility: hidden;
-        }
-        #myimg {
-            width: 320px;
-        }
-        .text-container p {
-            margin: 20px 5px 0px 25px;
-            line-height: 25px;
-        }
-        .text-container p:nth-child(1) {
-            font-size: 1.8em;
-            padding-top: 45px;
-        }
-        .text-container p:nth-child(2) {
-            font-size: 2.2em;
-        }
-        .text-container p:nth-child(3) {
-            font-size: 1.8em;
-            margin-bottom: 15px;
-        }
-        /***** ABOUT ME SECTION *****/
-        .box-shadow-full {
-            margin: -20% auto 20px auto;
-        }
-        /***** END ABOUT ME SECTION *****/
-        /***** CONTACT SECTION *****/
-        .contact-img {
-            background-image: url(../images/background/contact767.jpg);
-            height: 25vh;
-            margin-top: -10%;
-        }
-        .contact-text h4 {
-            margin-top: 20px;
-        }
-        .contact-text h4 {
-            margin: 10px 0px 30px 0px;
-        }
-        /***** END CONTACT SECTION *****/
+    .text-container .contact-btn {
+        margin-left: 0px;
     }
-    /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
-    
-    @media (max-width: 479px) {
-        /***** NAVBAR SECTION *****/
-        .navbar-brand {
-            font-size: 16px;
-            margin-right: 0px;
-            width: 300px;
-        }
-        #logoimg {
-            width: 15%
-        }
-        .navbar-toggler-icon {
-            width: 28px;
-            height: 25px;
-        }
-        .navbar-toggler {
-            padding: 8px 9px
-        }
-        /***** END NAVBAR SECTION *****/
-        /***** ABOUT ME SECTION *****/
-        .img-container {
-            visibility: hidden;
-        }
-        .text-container {
-            width: 100%;
-            margin-top: 35px;
-            padding: 25px 25px;
-        }
-        .text-container p:nth-child(1) {
-            font-size: 1.9em;
-            padding-top: 45px;
-        }
-        .text-container p:nth-child(2) {
-            font-size: 2.5em;
-        }
-        .text-container p:nth-child(3) {
-            font-size: 2em;
-            margin-bottom: 15px;
-        }
-        /***** END ABOUT ME SECTION *****/
-        /***** CONTACT SECTION *****/
-        .contact-img {
-            background-image: url(../images/background/contact479.jpg);
-            height: 25vh;
-            margin-top: -1%;
-        }
-        .contact-text h4 {
-            margin: 10px 0px 10px 0px;
-        }
-        /***** END CONTACT SECTION *****/
+    /***** END HEADER SECTION *****/
+    /***** ABOUT ME SECTION *****/
+    .box-shadow-full {
+        margin: -15% auto 20px auto;
     }
-    /********** Super Super extra small devices Only :-) (e.g., iPhone 4) **********/
-    
-    @media (max-width: 380px) {
-        /***** NAVBAR SECTION *****/
-        .navbar-brand {
-            width: 300px;
-            font-size: 15px;
-            margin-right: 0px;
-        }
-        #logoimg {
-            width: 13%
-        }
-        .navbar-toggler-icon {
-            width: 25px;
-            height: 23px;
-        }
-        .navbar-toggler {
-            padding: 5px 7px
-        }
-        /***** END NAVBAR SECTION *****/
+    .about-img {
+        margin-top: 43px;
     }
+    .lead {
+        font-size: 17px;
+    }
+    /***** END ABOUT ME SECTION *****/
+    /***** CONTACT SECTION *****/
+    .contact-img {
+        background-image: url(../images/background/contact991.jpg);
+        height: 25vh;
+    }
+    .contact-text h4 {
+        margin-top: 20px;
+    }
+    /***** END CONTACT SECTION *****/
+}
+
+
+/********** Extra small devices only **********/
+
+@media (min-width: 479px) and (max-width: 767px) {
+    /***** NAVBAR SECTION *****/
+    .navbar-brand {
+        font-size: 16px;
+    }
+    /***** END NAVBAR SECTION *****/
+    /***** HEADER SECTION *****/
+    header {
+        width: 100%;
+        height: 89vh;
+        background-color: #CC8561;
+        overflow: hidden;
+        position: relative;
+    }
+    .text-container {
+        margin-top: 30px;
+        padding: 25px 25px;
+        width: 100%;
+    }
+    .img-container {
+        visibility: hidden;
+    }
+    #myimg {
+        width: 320px;
+    }
+    .text-container p {
+        margin: 20px 5px 0px 25px;
+        line-height: 25px;
+    }
+    .text-container p:nth-child(1) {
+        font-size: 1.8em;
+        padding-top: 45px;
+    }
+    .text-container p:nth-child(2) {
+        font-size: 2.2em;
+    }
+    .text-container p:nth-child(3) {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
+    /***** ABOUT ME SECTION *****/
+    .box-shadow-full {
+        margin: -20% auto 20px auto;
+    }
+    /***** END ABOUT ME SECTION *****/
+    /***** CONTACT SECTION *****/
+    .contact-img {
+        background-image: url(../images/background/contact767.jpg);
+        height: 25vh;
+        margin-top: -10%;
+    }
+    .contact-text h4 {
+        margin-top: 20px;
+    }
+    .contact-text h4 {
+        margin: 10px 0px 30px 0px;
+    }
+    /***** END CONTACT SECTION *****/
+}
+
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+
+@media (max-width: 479px) {
+    /***** NAVBAR SECTION *****/
+    .navbar-brand {
+        font-size: 16px;
+        margin-right: 0px;
+        width: 300px;
+    }
+    #logoimg {
+        width: 15%
+    }
+    .navbar-toggler-icon {
+        width: 28px;
+        height: 25px;
+    }
+    .navbar-toggler {
+        padding: 8px 9px
+    }
+    /***** END NAVBAR SECTION *****/
+    /***** ABOUT ME SECTION *****/
+    .img-container {
+        visibility: hidden;
+    }
+    .text-container {
+        width: 100%;
+        margin-top: 35px;
+        padding: 25px 25px;
+    }
+    .text-container p:nth-child(1) {
+        font-size: 1.9em;
+        padding-top: 45px;
+    }
+    .text-container p:nth-child(2) {
+        font-size: 2.5em;
+    }
+    .text-container p:nth-child(3) {
+        font-size: 2em;
+        margin-bottom: 15px;
+    }
+    /***** END ABOUT ME SECTION *****/
+    /***** CONTACT SECTION *****/
+    .contact-img {
+        background-image: url(../images/background/contact479.jpg);
+        height: 25vh;
+        margin-top: -1%;
+    }
+    .contact-text h4 {
+        margin: 10px 0px 10px 0px;
+    }
+    /***** END CONTACT SECTION *****/
+}
+
+
+/********** Super Super extra small devices Only :-) (e.g., iPhone 4) **********/
+
+@media (max-width: 380px) {
+    /***** NAVBAR SECTION *****/
+    .navbar-brand {
+        width: 300px;
+        font-size: 15px;
+        margin-right: 0px;
+    }
+    #logoimg {
+        width: 13%
+    }
+    .navbar-toggler-icon {
+        width: 25px;
+        height: 23px;
+    }
+    .navbar-toggler {
+        padding: 5px 7px
+    }
+    /***** END NAVBAR SECTION *****/
+}
