@@ -353,6 +353,7 @@ ul li a:active {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     background-color: #f6f5f5;
+    border-radius: 10px;
 }
 
 .cert-box img:hover {
