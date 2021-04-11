@@ -165,7 +165,8 @@ button:active {
 }
 
 .about-img {
-    margin-top: 25px;
+    margin-top: 10px;
+    margin-left: 20px;
 }
 
 
@@ -176,11 +177,17 @@ button:active {
 # Projects Section
 --------------------------------------------------------------*/
 
-.section-title h4 {
+#section-title h2 {
+    margin: 25px 0px 25px;
+    text-align: center;
     text-transform: uppercase;
     color: #CC8561;
-    margin: 5px 0px 30px;
+}
+
+#section-title p {
     text-align: center;
+    margin-bottom: 35px;
+    font-size: 1.1rem;
 }
 
 .projects .projects-wrap {
@@ -342,10 +349,17 @@ ul li a:active {
     margin: 25px 0px;
 }
 
+.subtitle-a {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 1.1rem;
+}
+
 .certificates-box {
     background-color: #E3DAD0;
     padding: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    border-radius: 7px;
 }
 
 .cert-box {
@@ -353,7 +367,6 @@ ul li a:active {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     background-color: #f6f5f5;
-    border-radius: 10px;
 }
 
 .cert-box img:hover {
@@ -421,29 +434,28 @@ ul li a:active {
 .contact-img {
     width: 100%;
     height: 45vh;
-    position: relative;
     object-fit: cover;
-    margin-top: -5px;
     background-repeat: no-repeat;
     overflow: hidden;
     opacity: 65%;
     padding: 0px;
+    margin-bottom: 50px;
 }
 
 .contact-text h4 {
     text-transform: uppercase;
     color: #CC8561;
-    margin: 20px;
-    margin-top: 45px;
+    margin-top: 20px;
     text-align: center;
 }
 
-.footer-paralax {
+.contact-section {
     padding: 4rem 0 0 0;
 }
 
 .contact-box {
-    margin-top: 4rem;
+    margin-top: 12%;
+    margin-bottom: 4rem;
 }
 
 .contact-div {
