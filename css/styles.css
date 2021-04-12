@@ -165,7 +165,7 @@ button:active {
 }
 
 .about-img {
-    margin-top: 10px;
+    margin-top: 32px;
     margin-left: 20px;
 }
 
@@ -188,6 +188,7 @@ button:active {
     text-align: center;
     margin-bottom: 35px;
     font-size: 1.1rem;
+    color: #202020;
 }
 
 .projects .projects-wrap {
@@ -337,6 +338,57 @@ ul li a:active {
 
 
 /***** END PROJECTS DETAILS PAGE *****/
+
+
+/*--------------------------------------------------------------
+# Experience
+--------------------------------------------------------------*/
+
+#experience-box {
+    background: #fff;
+    margin: 10px 0px 45px;
+    opacity: .8;
+    border-radius: 10px;
+    box-shadow: 3px 3px #E3DAD0;
+    padding: 30px;
+}
+
+#experience-text {
+    color: #000;
+}
+
+.titulo {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #DB7C36;
+    margin-bottom: 5px;
+}
+
+.sub-titulo {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #DB7C36;
+}
+
+.titulo-tareas {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+.lista {
+    list-style: none;
+    font-size: 1rem;
+}
+
+.btn-recomendaciones {
+    background: #DB7C36;
+    color: #fff;
+}
+
+
+/***** END EXPERIENCE SECTION *****/
 
 
 /*--------------------------------------------------------------
@@ -779,6 +831,12 @@ ul li a:active {
     .box-shadow-full {
         margin: -20% auto 20px auto;
     }
+    .about-img img {
+        margin-top: 5px;
+    }
+    .title-aboutme {
+        margin-top: 30px;
+    }
     /***** END ABOUT ME SECTION *****/
     /***** CONTACT SECTION *****/
     .contact-img {
@@ -835,6 +893,12 @@ ul li a:active {
     .text-container p:nth-child(3) {
         font-size: 2em;
         margin-bottom: 15px;
+    }
+    .about-img img {
+        margin-top: 0px;
+    }
+    .title-aboutme {
+        margin-top: 30px;
     }
     /***** END ABOUT ME SECTION *****/
     /***** CONTACT SECTION *****/
